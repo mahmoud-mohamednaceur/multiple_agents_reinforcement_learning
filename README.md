@@ -1,9 +1,12 @@
-## Multi-Agent Reinforcement Learning with Implicit Communication
 
 
 ![2024-11-0616-46-47-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/af6e82b1-e9a6-462b-98bb-0f57a54c6e11)
 
-video taken from the game where the agent learned to escape and attack each others 
+##### video taken from the game where the agent learned to escape and attack each others 
+
+
+
+## Multi-Agent Reinforcement Learning with Implicit Communication
 
 
 
