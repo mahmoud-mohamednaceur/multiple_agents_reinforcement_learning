@@ -1,6 +1,8 @@
 ## Multi-Agent Reinforcement Learning with Implicit Communication
 
 
+![2024-11-0616-46-47-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/af6e82b1-e9a6-462b-98bb-0f57a54c6e11)
+
 
 
 This project focuses on the development of a decentralized multi-agent reinforcement learning system, where multiple agents (representing snakes) interact and learn within a shared environment. The agents utilize implicit communication through a dedicated channel, allowing them to be aware of each other's actions, without direct communication. This setup is aimed at exploring emergent strategies that arise when agents cooperate and compete within the same environment.
