@@ -3,6 +3,9 @@
 
 ![2024-11-0616-46-47-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/af6e82b1-e9a6-462b-98bb-0f57a54c6e11)
 
+video taken from the game where the agent learned to escape and attack each others 
+
+
 
 
 This project focuses on the development of a decentralized multi-agent reinforcement learning system, where multiple agents (representing snakes) interact and learn within a shared environment. The agents utilize implicit communication through a dedicated channel, allowing them to be aware of each other's actions, without direct communication. This setup is aimed at exploring emergent strategies that arise when agents cooperate and compete within the same environment.
@@ -22,6 +25,27 @@ This project focuses on the development of a decentralized multi-agent reinforce
 - **Emergent Strategy Analysis**: One of the primary goals is to see how the agents' strategies evolve over time. Will they form cooperative strategies, or will they develop competitive behaviors? This will provide valuable insights into multi-agent learning dynamics.
 
 - **Model Improvements**: Future work may include exploring different models for centralized control or improving the communication channels for better coordination among agents.
+
+# Reward system 
+
+
+1. **Agent Collision Rules:**
+   - **Head-to-Body Collision:** If an agent collides with any part of another agent’s body, it will "kill" that agent, resulting in the following:
+     - **The attacking agent** (the one initiating the head-to-body collision) will gain **+10 points**.
+     - **The attacked agent** will be removed from the environment (considered "killed" or "defeated").
+   - **Head-to-Head Collision:** If two agents collide head-to-head, they will both be "killed," with each agent losing **-10 points**.
+
+2. **Apple Consumption:**
+   - If an agent eats an apple by moving over it, it gains **+5 points**.
+
+
+
+### Integration in the Game Loop
+
+1. Detect **head-to-body** and **head-to-head collisions**.
+   - For head-to-body collisions
+
+If an agent eats an apple by moving over it, it gains +5 points.
 
 ### Theoretical Background:
 
